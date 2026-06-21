@@ -28,10 +28,12 @@ jobs:
     - name: Build Docker Image
       run: |
         docker build -t danperrod/docker-graphql:0.0.1 .
+        docker build -t danperrod/docker-graphql:latest .
 
     - name: Push Docker Image
       run: |
         docker push danperrod/docker-graphql:0.0.1
+        docker push danperrod/docker-graphql:latest
 
 
 
